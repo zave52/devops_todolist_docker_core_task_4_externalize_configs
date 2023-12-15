@@ -28,11 +28,18 @@ or start on the [landing page](http://localhost:8000/)
 - Fork this repository
 
 #### Requirements
-1. Prepare a docker-compose file that will build and start both MySQL db and Todolist app
-2. The application should work with no issues after running docker-compose up
-3. Update the README.md file by adding a new section with instructions on how to run and stop containers with docker-compose
-4. Todos should be stored in MySQL Database, with a persistent volume connected
-5. Create PR with your changes and attach it for validation on a platform
+1. pdate docker-compose to be able to set such env variables:
+    - ENGINE
+    - NAME
+    - USER
+    - PASSWORD
+    - HOST
+    - PORT
+2. Update your app to read ENV vars and set DATABASES section fields inside of todolist/settigns.py file
+3. TODO App should work as before
+4. Create PR with your changes and attach it for validation on a platform
+
+
 
 
 
